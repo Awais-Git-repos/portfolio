@@ -1,0 +1,837 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/myown.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      header {
+        width: 100%;
+        /* border: 1px solid black; */
+        background-color: snow;
+        height: 100vh;
+      }
+      ul {
+        list-style-type: none;
+        line-height: 6rem;
+      }
+
+
+      nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        color: black;
+      }
+      .container {
+        height: auto;
+        /* border: 1px solid #ede0e0; */
+      }
+      .hero {
+        margin-top: 8rem;
+      }
+      .article {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        /* position: relative; */
+      }
+
+      .hero_button {
+        padding: 2rem;
+      }
+      p,
+      a,
+      h1,
+      h3 {
+        color: white;
+      }
+      header {
+        background-color: #071224;
+      }
+      main {
+        width: 100%;
+        min-height: 10vh;
+        /* border: 1px solid black; */
+        background-color: #071224;
+      }
+      .project {
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid black; */
+      }
+      .cards {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.25s ease-in;
+        overflow: hidden;
+        overflow-x: hidden;
+      }
+      .nextbtn,
+      .prevbtn {
+        color: black;
+        padding: 1rem;
+        /* width: 8%; */
+        cursor: pointer;
+      }
+      .card_inner {
+        width: 100%;
+        /* border: 1px solid black; */
+      }
+      .card_inner_part {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .card_description ul li {
+        font-size: 2.5rem;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .card_description ul {
+        line-height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .card_description h3 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .skills {
+        /* border: 1px solid black; */
+        width: 100%;
+        min-height: 100vh;
+      }
+      .expanding {
+        animation-name: expand;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .expanding2 {
+        animation-name: expand2;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .expanding3 {
+        animation-name: expand3;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .expanding4 {
+        animation-name: expand4;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .expanding5 {
+        animation-name: expand5;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .expanding6 {
+        animation-name: expand6;
+        animation-duration: 2s;
+        animation-timing-function: 2s;
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      .out_bar {
+        width: 100%;
+        border: 1px solid black;
+        height: 50%;
+      }
+      .booster {
+        height: 100%;
+      }
+      @keyframes expand {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 80%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand2 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 70%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand3 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 70%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand4 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 60%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand5 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 70%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand6 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 50%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      @keyframes expand7 {
+        0% {
+          width: 0%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+        100% {
+          width: 50%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+        }
+      }
+      .booster h3 {
+        color: black;
+      }
+      .out_bar {
+        border: 1px solid #cec7c7;
+      }
+      .progress_heading h3 {
+        border: none;
+      }
+      section {
+        background-color: #071224;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container flex_row" style="padding-top: 1rem;position: relative;">
+        <nav>
+          <h3>Portfolio</h3>
+          <ul>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger_menu">
+            <i class="fa fa-bars" aria-hidden="true" style="font-size: 3rem;color: white;"></i>
+          </div>
+        </nav>
+      </div>
+      <section class="hero">
+        <div class="container hero_main_container flex_row" style="column-gap: 1.5rem">
+          <div class="article hero_container flex_col justitfy_center">
+            <div class="wrapper">
+              <h1
+                style="
+                  padding-top: 2rem;
+                  padding-bottom: 2rem;
+                "
+              >
+                Hy, I am <b>Awais Zubair</b>
+              </h1>
+              <p
+                style="
+                  text-align: left;
+                  word-spacing: 1rem;
+                "
+              >
+                A Front end web developer and designer. Create custom websites
+                for the client to grow their business online. I have 2 years of experience in this field.And done 2
+                major projects.
+              </p>
+              <a
+                href="#project"
+                class="btn41-43 btn-42"
+                style="margin-top: 5rem; margin-bottom: 2rem"
+              >
+                Projects
+              </a>
+            </div>
+          </div>
+          <div class="hero_container img shrink">
+            <img
+              src="images/5070f9e7af565d1d16a3edfd7f53cd1e.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="hidden_nav flex_row justitfy_center align_center" style="background-color:#071224;width: 100%;height: 90vh;position: absolute;top: 10%;">
+        <!-- <div class="hidden_list" style="width: 50%;height: 50%;border: 1px solid black;position: relative;"> -->
+        <ul class="inner_hidden_list" style="position: absolute;top: 30%;left: 35%;border: none;">
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </header>
+    <main>
+      <section id="project" class="project" style="position: relative">
+        <div class="container flex_row justitfy_center align_center">
+          <h3 style="font-size: 4rem">Projects</h3>
+        </div>
+        <div
+          class="container flex_row align_center justitfy_center card_main_container"
+          style="height: 80vh; position: relative;"
+        >
+          <div
+            class="project_cards"
+            style="position: relative; overflow-x: hidden;"
+          >
+            <div class="card_1 cards">
+              <div
+                class="container flex justitfy_center align_center cards_heading"
+                style="width: 100%; "
+              >
+                <h3 style="font-size: 4rem">Pizza Management System</h3>
+              </div>
+              <div class="card_inner_part flex_row" style="width: 100%">
+                <div class="card_description card_inner">
+                  <h3 style="font-size: 3rem">Languages Used:</h3>
+                  <ul>
+                    <li>C#</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">Framework:</h3>
+                  <ul>
+                    <li>.NET</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">IDE used:</h3>
+                  <ul>
+                    <li>Visual Studio</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">Database used:</h3>
+                  <ul>
+                    <li>MS SQL Server</li>
+                  </ul>
+                </div>
+                <div class="card_img card_inner">
+                  <img
+                    src="images/depositphotos_110376684-stock-illustration-vector-concept-of-online-pizza.jpg"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="card_2 cards">
+              <div
+                class="container flex justitfy_center align_center"
+                style="width: 100%; height: 10%"
+              >
+                <h3 style="font-size: 4rem">News Management System</h3>
+              </div>
+              <div class="card_inner_part flex_row" style="width: 100%">
+                <div class="card_description card_inner">
+                  <h3 style="font-size: 3rem">Languages Used:</h3>
+                  <ul>
+                    <li>PHP</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">Framework:</h3>
+                  <ul>
+                    <li>Laravel</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">IDE used:</h3>
+                  <ul>
+                    <li>Visual Studio</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">Database used:</h3>
+                  <ul>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+                <div class="card_img card_inner">
+                  <img
+                    src="images/Build-a-News-Portal-Website-from-SCRATCH-using-PHP-and-MYSQL.jpg"
+                    alt=""
+                    style="width: 100%; height: 100%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card_3 cards">
+              <div
+                class="container flex justitfy_center align_center"
+                style="width: 100%; height: 10%"
+              >
+                <h3 style="font-size: 4rem">Smart Glove</h3>
+              </div>
+              <div class="card_inner_part flex_row" style="width: 100%">
+                <div class="card_description card_inner">
+                  <h3 style="font-size: 3rem">Languages Used:</h3>
+                  <ul>
+                    <li>Sketch</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">IDE used:</h3>
+                  <ul>
+                    <li>Arduino</li>
+                  </ul>
+                  <h3 style="font-size: 3rem">Components used:</h3>
+                  <ul>
+                    <li>Arduino Uno</li>
+                  </ul>
+                  <ul>
+                    <li>Flex Sensors</li>
+                  </ul>
+                  <ul>
+                    <li>Jumper Wires</li>
+                  </ul>
+                  <ul>
+                    <li>16*2 LCD</li>
+                  </ul>
+                  <ul>
+                    <li>Glove</li>
+                  </ul>
+                  <ul>
+                    <li>Bread board</li>
+                  </ul>
+                </div>
+                <div class="card_img card_inner">
+                  <img
+                    class="image_intro"
+                    src="images/WhatsApp Image 2022-09-28 at 7.14.31 PM.jpeg"
+                    alt=""
+                    style="width: 100%; height: 100%; object-position: bottom"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="nextbtn"
+          >
+            Next
+          </button>
+          <button
+            class="prevbtn"
+          >
+            Previous
+          </button>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="container flex_row justitfy_center align_center">
+          <h3 style="font-size: 4.3rem">Skills</h3>
+        </div>
+        <div class="container skill_container" style="min-height: 50vh">
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3 >HTML</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_1"
+                style="border: 1px solid white; height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">80%</h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3>Css</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_2"
+                style="height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">70%</h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3 >Javascript</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_3"
+                style="border: wheat; height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">70%</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3 >Boostrap</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_4"
+                style="height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">60%</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3>Php</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_5"
+                style="height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">70%</h3>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="Progess_bar flex_row"
+            style="
+              height: 10%;
+              width: 80%;
+              column-gap: 1.5rem;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+              padding: 1rem;
+              column-gap: 1rem;
+            "
+          >
+            <div
+              class="progress_heading progress_div"
+              style="text-align: center"
+            >
+              <h3>Mysql</h3>
+            </div>
+            <div class="out_bar progess_div" style="width: 80%">
+              <div
+                class="booster booster_6"
+                style="height: 50%; text-align: center"
+              >
+                <h3 style="font-size: 3rem">50%</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <!-- <a href="https://chat.whatsapp.com/J8e7jdCbdMnBcKSWVcguTJ">Contact Me</a> -->
+        <div
+          class="container flex_row justitfy_center align_center"
+          style="
+            height: 100vh;
+            margin: 0 auto;
+          "
+        >
+          <div
+            class="contact_us flex_row"
+            style="
+              width: 80%;
+              height: 80%;
+            "
+          >
+            <div
+              class="social_links flex_row  align_center"
+              style="
+                height: 100%;
+                justify-content: flex-end;
+              "
+            >
+              <ul class="social_list">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100072336046209"
+                    ><i
+                      class="fa fa-facebook-square"
+                      aria-hidden="true"
+                      style="cursor: pointer;"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-github" aria-hidden="true" style="cursor: pointer;"></i></a>
+                </li>
+                <li><a href="https://twitter.com/CryptoLower1?t=FBPluDGAIXWfCv4O8ZeM0Q&s=08"><i class="fa fa-twitter" aria-hidden="true" style="cursor: pointer;"></i></a></li>
+                <li><a href="https://www.instagram.com/invites/contact/?i=fjx1d9l1he3v&utm_content=it97iz3"><i class="fa fa-instagram" aria-hidden="true" style="cursor: pointer;"></i></a></li>
+              </ul>
+            </div>
+            <div
+              class="contact_description flex_row justitfy_center align_center"
+              style="
+                height: 100%;
+              "
+            >
+            <div class="contact_wrapper" style="text-align: center;">
+                <h1 style="padding-bottom: 0.5rem;">Get In Touch</h1>
+                <p style="font-size: 2rem;padding-top: 2rem;padding-bottom: 2rem;line-height: 2.5rem;">If You want to contact me, then there is a group link of whatsapp from where you can dm me.</p>
+                <a
+                href="https://chat.whatsapp.com/J8e7jdCbdMnBcKSWVcguTJ";
+                class="btn41-43 btn-42"
+                style="padding-top: 1.5rem;padding-bottom:1.5rem;margin-top: 2rem;"
+              >
+                Contact Me
+              </a>
+            </div>
+        </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      var a = document.querySelectorAll(".cards");
+      var nextbtn = document.querySelector(".nextbtn");
+      var prevbtn = document.querySelector(".prevbtn");
+      var counter = 0;
+      a.forEach(function (cards, index) {
+        cards.style.left = `${index * 100}%`;
+      });
+      nextbtn.addEventListener("click", function () {
+        counter++;
+        if(counter == a.length){
+          counter = 0;
+        }
+        carosel();
+      });
+      prevbtn.addEventListener("click", function () {
+        counter--;
+        if(counter < 0){
+          counter = a.length - 1;
+        }
+        carosel();
+      });
+      function carosel() {
+        a.forEach(function (card) {
+          card.style.transform = `translateX(-${counter * 100}%)`;
+        });
+      }
+      var booster1 = document.querySelector(".booster_1");
+      var booster2 = document.querySelector(".booster_2");
+      var booster3 = document.querySelector(".booster_3");
+      var booster4 = document.querySelector(".booster_4");
+      var booster5 = document.querySelector(".booster_5");
+      var booster6 = document.querySelector(".booster_6");
+      const observer = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding");
+          } else {
+            entry.target.classList.remove("expanding");
+          }
+        });
+      });
+      observer.observe(booster1);
+
+      const observer2 = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding2");
+          } else {
+            entry.target.classList.remove("expanding2");
+          }
+        });
+      });
+      observer2.observe(booster2);
+
+      const observer3 = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding3");
+          } else {
+            entry.target.classList.remove("expanding3");
+          }
+        });
+      });
+      observer3.observe(booster3);
+      const observer4 = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding4");
+          } else {
+            entry.target.classList.remove("expanding4");
+          }
+        });
+      });
+      observer4.observe(booster4);
+      const observer5 = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding5");
+          } else {
+            entry.target.classList.remove("expanding5");
+          }
+        });
+      });
+      observer5.observe(booster5);
+      const observer6 = new IntersectionObserver((entries) => {
+        // Loop over the entries
+        entries.forEach((entry) => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add("expanding6");
+          } else {
+            entry.target.classList.remove("expanding6");
+          }
+        });
+      });
+      observer6.observe(booster6);
+      var hidden_nav = document.querySelector(".hidden_nav");
+      var hamburger_menu = document.querySelector(".hamburger_menu");
+      hamburger_menu.addEventListener("click",function(){
+        hidden_nav.classList.toggle("callback_position");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/bfc6e8b88c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

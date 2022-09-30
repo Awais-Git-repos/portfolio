@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --width:90%;
+    --height:10vh;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: var(--width);
+    min-height: var(--height);
+    /* border: 1px solid black; */
+    background-color: wheat;  
+    padding-left: 1rem;       
+    padding-right: 1rem;
+    margin: 0 auto;
+    background-color: #071224;
+}
+.progress_heading{
+    width: 20%;
+   }
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.div{
+    border: 1px solid rgb(117, 107, 107);
+    /* min-height: 15%; */
+    /* width: 6em; */
+    background-color: rgb(161, 7, 7);
+    padding: 5px;
+}
+
+ .col1{
+    width: 10%;
+    /* background-color: rgb(243, 231, 231); */
+    background-color: rgb(161, 7, 7);
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} 
+.col2{
+    width: 20%;
+    /* background-color: rgb(243, 231, 231); */
+    background-color: rgb(161, 7, 7);
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+}
+.col3{
+    width: 30%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+}
+.col4{
+    width: 40%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col5{
+    width: 50%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col6{
+    width: 60%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col7{
+    width: 70%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col8{
+    width: 80%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col9{
+    width: 90%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} .col10{
+    width: 100%;
+    background-color: rgb(161, 7, 7);
+    /* background-color: rgb(243, 231, 231); */
+    
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} 
+.col11{
+    width: 66em;
+    background-color: rgb(161, 7, 7);
+
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+}
+.col12{
+    width: 72em;
+    background-color: rgb(161, 7, 7);
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} 
+.col13{
+    width: 78em;
+    background-color: rgb(161, 7, 7);
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} 
+.col14{
+    width: 85em;
+    background-color: rgb(161, 7, 7);
+    min-height: 15%;
+    border: 1px solid rgb(117, 107, 107);
+} 
+.flex_grow_1{
+    flex-grow: 1;
+}
+.flex_grow_2{
+    flex-grow: 2;
+} .flex_grow_3{
+    flex-grow: 3;
+} .flex_grow_4{
+    flex-grow: 4;
+} .flex_grow_5{
+    flex-grow: 5;
+} .flex_grow_6{
+    flex-grow: 6;
+} .flex_grow_7{
+    flex-grow: 7;
+} .flex_grow_8{
+    flex-grow: 8;
+} .flex_grow_9{
+    flex-grow: 9;
+} .flex_grow_10{
+    flex-grow: 10;
+} .flex_grow_11{
+    flex-grow: 11;
+} .flex_grow_12{
+    flex-grow: 12;
+}
+.flex{
+    display: flex;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+.justitfy_center{
+    justify-content: center;
+}
+.justitfy_between{
+    justify-content: space-between;
+}
+.justify_around{
+    justify-content: space-around;
+}
+.justify_evenly{
+    justify-content: space-evenly;
+}
+.justify_end{
+    justify-content: flex-end;
+}
+.align_center{
+    align-items:center;
+}
+html{
+    font-size: 62.5%;
+}
+ul li {
+    display: inline;
+  }
+  ul li:not(:last-child) {
+    padding-right: 5rem;
+  }
+  .inner_hidden_list li{
+    display: block;
+    padding: none;
+  }
+.social_links{
+    width: 20%;
+}
+.project_cards{
+    width: 70%;
+}
+.prevbtn,.nextbtn{
+    width: 8%;
+}
+.contact_wrapper{
+    width: 60%;
+}
+.contact_wrapper h1{
+    font-size: 4.5rem;
+}
+.contact_description{
+    width: 80%;
+}
+.hero_container {
+    width: 100%;
+  }
+  .wrapper p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+
+  }
+  .wrapper h1{
+    font-size: 4.5rem;
+
+  }
+  .prevbtn{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    background: rgb(255, 255, 255);
+    border: none;
+
+  }
+  .nextbtn{
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    background: rgb(255, 255, 255);
+    border: none;
+
+  }
+  .project_cards{
+    height: 90%;
+  }
+  .cards_heading{
+    height: 10%
+  }
+  .card_main_container{
+    margin-top: 5rem;
+  }
+  nav h3{
+    font-size: 4rem;
+  }
+  .progress_heading h3{
+    font-size: 3rem;
+  }
+  .hamburger_menu{
+    display: none;
+  }
+  .inner_hidden_list ul{
+    line-height: 8rem;
+  }
+.hidden_nav{
+    margin-left: -105%;
+    transition: all 0.15s ease-in;
+}
+.callback_position{
+    margin-left: 0%;
+    z-index: 2;
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        background-color: blue;
+    }
+    .progress_heading{
+        width: 30%;
+       }
+       .prevbtn,.nextbtn{
+        min-width: 10%;
+    }
+    /* .contact_wrapper{
+        width: 100%;
+    } */
+}
+
+@media(max-width:700px){
+    html{
+        font-size: 45%;
+    }
+    body{
+        background-color: #071224;
+    }
+   .progress_heading{
+    width: 30%;
+   }
+   .project_cards{
+    width: 90%;
+   }
+   .contact_wrapper{
+    width: 100%;
+   }
+   
+   .social_links{
+    width: 8%;
+}
+.contact_description{
+    width: 90%;
+}
+.shrink{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 5%;
+    display: none;
+}
+.wrapper{
+    margin-top: 10%;
+}
+.wrapper p{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.wrapper h1{
+    font-size: 5rem;
+}
+.prevbtn{
+    top: 95%;
+    left: 26%;
+    background: rgb(255, 255, 255);
+   padding: 1.5rem;
+   height: auto;
+   width: 20%;
+   border: none;
+}
+.nextbtn{
+    top: 95%;
+    right: 26%;
+    background: rgb(255, 255, 255);
+   padding: 0rem;
+   height: auto;
+   padding: 1.5rem;
+   width: 20%;
+   border: none;
+}
+.project_cards{
+    height: 85%;
+}
+.cards_heading{
+    height: 5%;
+}
+.card_main_container{
+    margin-top: 2rem;
+}
+.contact_wrapper h1{
+    font-size: 5rem;
+}
+}
+@media(max-width:425px) {
+    html{
+        font-size: 45%;
+    }
+    body{
+        background-color: #071224;
+    }
+   .project_cards{
+    width: 100%;
+   }
+   .contact_wrapper{
+    width: 100%;
+   }
+   /* nav ul li a{
+    font-size: 1.8rem;
+   }
+   nav h3{
+    font-size: 3rem;
+   }
+   nav ul{
+    margin-top: 1%;
+   }
+   nav ul li:not(:last-child){
+    padding-right: 2rem;
+   } */
+   nav ul{
+    display: none;
+   }
+   .hamburger_menu{
+    display: block;
+   }
+   .social_links{
+    width: 8%;
+}
+.contact_description{
+    width: 90%;
+}
+.shrink{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 5%;
+    display: none;
+}
+.wrapper{
+    margin-top: 10%;
+}
+.wrapper p{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+.wrapper h1{
+    font-size: 5rem;
+}
+.prevbtn{
+    top: 95%;
+    left: 26%;
+    background: rgb(255, 255, 255);
+   padding: 1.5rem;
+   height: auto;
+   width: 20%;
+   border: none;
+}
+.nextbtn{
+    top: 95%;
+    right: 26%;
+    background: rgb(255, 255, 255);
+   padding: 0rem;
+   height: auto;
+   padding: 1.5rem;
+   width: 20%;
+   border: none;
+}
+.project_cards{
+    height: 85%;
+}
+.cards_heading{
+    height: 5%;
+}
+.card_main_container{
+    margin-top: 2rem;
+}
+.contact_wrapper h1{
+    font-size: 5rem;
+}   
+.progress_heading h3{
+    font-size: 2.5rem;
+}
+.progress_heading{
+    width: 50%;
+}
+.inner_hidden_list li a{
+    font-size: 4rem;
+}
+.inner_hidden_list li{
+    padding: 2.5rem;
+}
+}

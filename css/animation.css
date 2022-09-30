@@ -1,0 +1,14 @@
+.heading{
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-timing-function: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes grow{
+    0%{width: 200px; height: 50px; background-color: blue}
+    50%{width: 500px;height: 50px;background-color: peru;}
+    100%{width: 200px; height: 200px; background-color: red};
+}
